@@ -1,0 +1,27 @@
+body{
+  background-image: url(wallpaper.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+h1{
+  font-family: font-family: 'Monoton', cursive;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.wrapper{
+  margin: 0 auto;
+}
+.rank{
+  font-size: 25px;
+}
+.games p{
+  font-family: 'Notable', sans-serif;
+  color: red;
+  background-color: black;
+  margin: 0px 80px;
+  padding: 7px 10px
+}

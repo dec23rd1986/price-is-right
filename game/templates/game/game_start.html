@@ -1,0 +1,11 @@
+{% extends 'base_layout.html'%}
+{% block content%}
+    <h1>The Price is Right</h1>
+    <div class="games text-center">
+      <p class="rank">Score Ranking</p>
+
+      {% for game in games%}
+        <p>{{game.score}} {{game.date}}</p>
+      {% endfor %}
+    </div>
+{% endblock%}
