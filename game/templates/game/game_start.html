@@ -1,11 +1,21 @@
 {% extends 'base_layout.html'%}
+<<<<<<< HEAD
 {% block content%}
     
+=======
+
+
+{% block content %}
+>>>>>>> userFeature
     <div class="games text-center">
       <p class="rank">Score Ranking</p>
 
       {% for game in games%}
         <p>{{game.score}} {{game.date}}</p>
       {% endfor %}
+        <form class="user-form" action="/game/game_start/" method="post">
+          {{form}}
+        <input type="submit" name="" value="signup">
+        </form>
     </div>
-{% endblock%}
+{% endblock %}
