@@ -5,6 +5,16 @@ body{
   background-position: center;
 }
 
+.wrapper{
+  background-color: orange;
+  margin: 30px 50px
+}
+
+h1.title{
+  color: white;
+  padding: 10px
+}
+
 h1{
   font-family: font-family: 'Monoton', cursive;
   font-size: 60px;
@@ -12,9 +22,7 @@ h1{
   padding-top: 5rem;
 }
 
-.wrapper{
-  margin: 0 auto;
-}
+
 .rank{
   font-size: 25px;
 }
