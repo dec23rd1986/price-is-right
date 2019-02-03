@@ -5,7 +5,7 @@ body{
   background-position: center;
 }
 
-<<<<<<< HEAD
+
 .wrapper{
   background-color: orange;
   margin: 30px 50px
@@ -13,17 +13,9 @@ body{
 
 h1.title{
   color: white;
-  padding: 10px
-=======
-.title-back{
+  padding: 10px 10px;
   background-color: orange;
   margin: 30px
-}
-h1.title{
-  color: white;
-  padding: 10px 10px
-
->>>>>>> userFeature
 }
 
 h1{
