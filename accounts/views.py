@@ -8,9 +8,11 @@ def signup(request):
        form = UserCreationForm(request.POST)
        if form.is_valid():
           user = form.save()
-          # do soemthing with the registered user
+          # do soemthing with the registered user / redirect to retailprice page
           data['user_created'] = True
     else:
-       form = UserCreationForm() 
+       form = UserCreationForm()
     data['form'] = form
     return data
+#login
+#logout
