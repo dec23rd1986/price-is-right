@@ -12,7 +12,7 @@ urlpatterns = [
     path('retailPrice', include('retailPrice.urls')),
     path('about', views.about),
     path('', game_views.game_start, name="home"),
-    path('', game_views.signup_view),
+    path('', game_views.signup),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
