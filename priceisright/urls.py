@@ -9,7 +9,7 @@ from game import views as game_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('game/', include('game.urls')),
-    path('retailPrice', include('retailPrice.urls')),
+    path('retailPrice', include('retailPrice.urls'), name="price"),
     path('about', views.about),
     path('', game_views.game_start, name="home"),
     path('', game_views.signup),
