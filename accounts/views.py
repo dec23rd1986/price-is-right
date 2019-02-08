@@ -8,12 +8,15 @@ def signup(request):
        form = UserCreationForm(request.POST)
        if form.is_valid():
           user = form.save()
-          return redirect('retail:price')
-          # do soemthing with the registered user / redirect to retailprice page
+
+          # do something with the registered user / redirect to retailprice page
+          #getting keyError warning from 'user_created'
           data['user_created'] = True
+
     else:
        form = UserCreationForm()
     data['form'] = form
     return data
+    #return user to homepage
 #login
 #logout
