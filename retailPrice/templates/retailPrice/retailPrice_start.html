@@ -1,15 +1,16 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Actual Retail Price</title>
+{% extends 'base_layout.html'%}
+{% load my_templatetag %}
+{% block content %}
+    <!-- <title>Actual Retail Price</title>
   </head>
-  <body>
+  <body> -->
     <h1>Actual Retail Price!</h1>
     <p>Include item image</p>
     <p>Input where player can enter amount + button to enter guess</p>
     <p>Include other players guesses via random players and amounts</p>
 
     <p>python will go through guess and see if player is winner, if you win you move to last and final round, if not player can play again</p>
-  </body>
-</html>
+  <form>
+    <input type="text" name="random_num" value="">{% random_int 1 10%}
+  </form>
+{% endblock %}
