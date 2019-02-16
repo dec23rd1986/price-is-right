@@ -8,14 +8,20 @@
     <p>Include other players guesses via random players and amounts</p>
 
     <p>python will go through guess and see if player is winner, if you win you move to last and final round, if not player can play again</p>
+
   <form>
+    <div class="form-row">
+        <div class="col"><i class="fas fa-user fa-lg"></i>
 
-    <input type="text" name="random_num" value="{% random_int 1 500000 %}">
-    <input type="text" name="random_num" value="">
-    <input type="text" name="random_num" value="{% random_int 1 500000 %}">
-
-    <!-- Random number is not inside input field - fix -->
-    
+    <input type="text" class="form-control mb-2 mr-sm-2" value="{% random_int 1 500000 %}">
+    </div>
+    <div class="col"><i class="fas fa-user fa-lg"></i>
+    <input type="text" class="form-control mb-2 mr-sm-2" value="">
+    </div>
+    <div class="col"><i class="fas fa-user fa-lg"></i>
+    <input type="text" class="form-control mb-2 mr-sm-2" value="{% random_int 1 500000 %}">
+    </div>
+    </div>
   </form>
 
 {% endblock %}
