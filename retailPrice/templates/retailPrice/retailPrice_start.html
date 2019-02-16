@@ -11,9 +11,11 @@
   <form>
 
     <input type="text" name="random_num" value="{% random_int 1 500000 %}">
-    
-    <!-- Random number is not inside input field - fix -->
+    <input type="text" name="random_num" value="">
+    <input type="text" name="random_num" value="{% random_int 1 500000 %}">
 
+    <!-- Random number is not inside input field - fix -->
+    
   </form>
 
 {% endblock %}
