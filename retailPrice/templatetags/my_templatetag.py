@@ -1,5 +1,6 @@
 import random, os
 from django import template
+from django.conf import settings
 
 
 
@@ -18,7 +19,6 @@ def random_filename(width=128, height=128):
     if os.path.isfile(os.path.join(path, x))
 ])
     return random_filename()
-
 
 # grill = 139.99, Kenmore 4-Burner Gas Grill with Side Burner
 # toothpaste = 2.99, Crest Cavity Protection
